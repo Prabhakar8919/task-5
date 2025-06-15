@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>NeoShop - Advanced Ecommerce</title>
+  <link rel="stylesheet" href="styles5.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">NeoShop</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h2>Experience the Future of Shopping</h2>
+      <p>Shop the latest tech and fashion trends of 2025.</p>
+      <button class="btn" onclick="scrollToProducts()">Shop Now</button>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="tech">Tech</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <select id="sortFilter">
+          <option value="default">Sort by</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
+        </select>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <!-- Products will be injected dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About NeoShop</h2>
+      <p>NeoShop is an innovative e-commerce platform designed for 2025. We blend futuristic UI/UX with performance-first development practices.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <p>&copy; 2025 NeoShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script5.js" defer></script>
+</body>
+</html>
